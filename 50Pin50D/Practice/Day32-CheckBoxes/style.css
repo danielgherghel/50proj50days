@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* set a universal selector * */
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(194, 193, 188);
+}
+
+.check-container{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+
+}
+
+.switch{
+    visibility: hidden;
+}
+
+.indication {
+    position: relative;
+    background-color:rgb(114, 116, 115);
+    cursor: pointer;
+    border-radius: 100px;
+    margin: 0 15px 0;
+    display: block;
+    width: 200px;
+    height: 100px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.switch:checked + .indication {
+    background-color: rgb(52, 118, 63);
+}
+
+.inelement{
+    background-color: #fff;
+    height: 94px;
+    width: 94px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    align-items: center;
+    justify-content: center;
+    animation: slideR 0.3s linear forwards;
+}
+
+.switch:checked  + .indication .inelement{
+    animation: slideL 0.3s linear forwards;
+}
+
+@keyframes slideL{
+    0%{
+        transform: translateX(0) scale(0.9);
+    }
+    25% {
+        transform: translateX(20%) scale(1);
+    }
+    50%{
+        transform: translateX(40%) scale(1.1);
+    }
+    100%{
+        transform: translateX(100px) scale(0.9);
+    }
+}
+
+
+@keyframes slideR{
+    0%{
+        transform: translateX(100px) scale(0.9);
+    }
+    25%{
+        transform: translateX(40%) scale(1);
+    }
+    50%{
+        transform: translateX(20%) scale(1);
+    }
+    100%{
+        transform: translateX(0) scale(0.9);
+    }
+}

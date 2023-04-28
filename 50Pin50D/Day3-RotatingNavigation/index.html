@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rotating Navigation</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Z-Index article</h1>
+            <small>Daniel Gherghel</small>
+            <p>When it comes to designing web pages, one of the most important aspects to consider is the z-index. This
+                property controls the stacking order of elements on a page, and can greatly impact the visual hierarchy
+                and user experience of a website.
+
+                In simple terms, the z-index determines which elements appear in front of or behind others. Elements
+                with a higher z-index value will be displayed on top of elements with a lower z-index value. This can be
+                especially useful when working with overlapping elements, such as a dropdown menu that needs to appear
+                on top of other content.
+
+                To understand the z-index in more depth, it's helpful to first understand the concept of the "z-axis".
+                In a 2D space like a web page, the x-axis represents horizontal movement and the y-axis represents
+                vertical movement. The z-axis, however, represents depth or "stacking" order. Think of it like a stack
+                of papers on a desk - the paper on top is more "in front" than the paper below it.</p>
+
+
+
+            <h3>More info on it</h3>
+            <img src="code.jpg" alt="" coding srcset="">
+
+            <p>When working with the z-index property in CSS (Cascading Style Sheets), it's important to keep a few
+                things in mind. First, the z-index only applies to elements that have a position value other than
+                "static" - this includes elements with a position value of "relative", "absolute", or "fixed". Elements
+                with a "static" position will be unaffected by z-index.
+
+                Second, it's important to remember that the z-index is a relative property - it only affects the
+                stacking order of elements within the same containing block. In other words, two elements with different
+                z-index values within different containing blocks will not be affected by each other's values.
+
+                Finally, it's worth noting that z-index can be a tricky property to work with, especially when dealing
+                with complex layouts or nested elements. If two elements have the same z-index value, their stacking
+                order will be determined by their order in the HTML source code. Additionally, adding a high z-index
+                value to one element may inadvertently affect the stacking order of other elements on the page.
+
+                Despite these potential challenges, the z-index is an essential tool for creating visually appealing and
+                functional web pages. By controlling the stacking order of elements on a page, designers can ensure that
+                important elements like navigation menus or call-to-action buttons are always visible and accessible to
+                users.
+
+                In conclusion, the z-index property is a crucial aspect of web design that can greatly impact the visual
+                hierarchy and user experience of a website. Understanding how it works and using it effectively can make
+                a big difference in the overall success of a web project.</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-user-alt"></i>About</li>
+            <li><i class="fas fa-envelope"></i>Contact</li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

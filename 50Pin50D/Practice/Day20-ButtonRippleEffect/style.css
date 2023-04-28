@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* set a universal selector * */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    transition: all ease;
+}
+
+
+
+.cont1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+}
+
+.contA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 1vw;
+    width: 35vw;
+    height: 80vh;
+    padding: 30px;
+    margin: 50px;
+}
+
+.contA span {
+    position: relative;
+    left: -190px;
+    top: 40px;
+}
+
+.contA h3 {
+    left: -150px;
+    position: relative;
+}
+
+
+.contB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    right: 1vw;
+    width: 35vw;
+    height: 80vh;
+    padding: 30px;
+    margin: 50px;
+}
+
+.contB span {
+    position: relative;
+    left: -190px;
+    top: 40px;
+}
+
+.contB h3 {
+    position: relative;
+    left: -150px;
+}
+
+
+.contB button {
+    opacity: 0.5;
+}
+
+.bttn {
+    background-color: rgb(17, 159, 207);
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+}
+
+
+.bttn.hvr {
+    background-color: rgb(39, 200, 200);
+}
+
+.bttn.act {
+    background-color: rgb(195, 164, 27);
+    transform: translateY(5px);
+}
+
+.bttn:active {
+    background-color: rgb(195, 164, 27);
+    transform: scale(0.93);
+}
+
+
+.bttn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4CAF50;
+}
+
+
+
+.bttn:hover {
+    background-color: rgb(39, 200, 200);
+}
+
+
+button .effect {
+    position: absolute;
+    background-color: #cc0303;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .5s ease-out;
+    overflow: hidden;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}

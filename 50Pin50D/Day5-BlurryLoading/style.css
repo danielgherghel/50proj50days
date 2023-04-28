@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* set a universal selector * */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.bg {
+    background: url('mountain.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -50;
+    left: -50;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: rgb(180, 218, 202);
+    border: 2px solid rgb(180, 218, 202);
+    padding: 30px;
+}

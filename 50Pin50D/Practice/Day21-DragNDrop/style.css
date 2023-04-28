@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* set a universal selector * */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 15;
+    scroll-behavior: smooth;
+}
+
+.voidcont {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #000;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+
+.fillcontent {
+    background-image: url('https://source.unsplash.com/random/190x190');
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+.holdcontainer {
+    border: solid 10px #ea9c9c;
+}
+
+.hoverState {
+    background-color: #766767;
+    border-color: antiquewhite;
+    border-style: dashed;
+}
+
+@media(max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+}

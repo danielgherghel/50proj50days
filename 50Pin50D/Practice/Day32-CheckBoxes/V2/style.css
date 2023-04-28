@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: rgb(194, 193, 188);
+}
+
+
+.cheking-container {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.check { 
+    visibility: hidden;
+}
+
+.cheking-container span{
+    outline: 1px solid red;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+
+
+
+.mark {
+    position: relative;
+    background-color: rgba(114,116,115);
+    cursor: pointer;
+    border-radius: 100px;
+    margin: 0 15px 0;
+    display: block;
+    width: 300px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check:checked + .mark{
+    background-color: rgb(155, 199, 88);
+}
+
+.box {
+    background-color: #fff;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    animation: slideL 0.3s linear forwards;
+}
+
+.check:checked + .mark .box{
+    animation: slideR 0.3s linear forwards;
+}
+
+@keyframes slideR{
+    0%{
+        transform: translateX(0) scale(1);
+    }
+    25%{
+        transform: translateX(50%) scale(0.9);
+    }
+    100%{
+        transform: translateX(100%) scale(1);
+    }
+}
+
+@keyframes slideL{
+    0%{
+        transform: translateX(100px) scale(1);
+    }
+    25%{
+        transform: translateX(50%) scale(0.9);
+    }
+    50%{
+        transform: translateX(0) scaleX(1);
+    }
+}

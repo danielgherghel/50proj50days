@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* set a universal selector * */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(90deg, #7d7d7d, #412ee5);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+.explore {
+    position: relative;
+    height: 60px;
+    border: 0;
+}
+
+.explore .processing {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 20px;
+    height: 60px;
+    width: 50px;
+    transition: width 0.3s ease;
+
+}
+
+.bttn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 5px;
+    left: 2.5px;
+    height: 45px;
+    width: 45px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+
+.bttn:focus,
+.processing:focus {
+    outline: none;
+
+}
+
+
+.explore.active .processing {
+    width: 300px;
+}
+
+
+.explore.active .bttn {
+    transform: translateX(247px);
+}
