@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* set a universal selector * */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #7b6f6a;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title{
+    margin: 0;
+    font-size: 20px;
+}
+
+.note{
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.7;
+}
+
+.header{
+    background-color: rgb(119, 137, 153);
+    color: black;
+    padding: 15px 10px;
+}
+
+
+.header input{
+    background-color: rgb(149, 174, 174);
+    border: 0;
+    border-radius: 50px;
+    font-size: 15px;
+    padding: 10px 15px;
+    width: 100%;
+    color: black;
+}
+
+
+
+.header input:focus{
+    outline: none;
+}
+
+.header small{
+    color: black;
+    font-size: 15px;
+}
+
+.user-main{
+    background-color: rgb(149, 174, 174);
+    list-style-type: none;
+    margin: 0;
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+
+.user-main li{
+    display: flex;
+    padding: 30px;
+}
+
+.user-main img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 140px;
+    width: 140px;
+}
+
+.user-main .user-data{
+    margin-left: 30px;
+}
+
+.user-main .user-data h4{
+    margin: 20px 0 30px;
+}
+
+.user-main .user-data p{
+    margin: 0 0 20px;
+}
+
+.user-main li:not(:last-of-type){
+    border-bottom: 1px solid #7b5f5f;
+}
+
+
+.user-main li.hide{
+    display: none;
+}
+
