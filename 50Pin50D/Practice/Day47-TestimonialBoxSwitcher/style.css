@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+/* set a universal selector * */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.reviews-container{
+    background-color: rgb(51, 101, 159);
+    color: #fff;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    max-width: 900px;
+    position: relative;
+}
+
+.fa-quote {
+    color: rgb(211, 92, 37);
+    font-size: 30px;
+    position: absolute;
+    top: 60px;
+}
+
+.fa-quote-right{
+    left: 50px;
+}
+
+.fa-quote-left{
+    right: 50px;
+}
+
+.review {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviewer .reviewer-image {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.reviewer .reviewer-details {
+    margin-left: 20px;
+}
+
+.reviewer .name{
+    margin: 0;
+}
+
+.reviewer .position {
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+
+.timmed-review {
+    background-color: #fff;
+    height: 8px;
+    border-radius: 50px;
+    width: 100%;
+    animation: slide 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes slide {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+@media(max-width: 700px){
+    .reviews-container{
+        padding: 20px 30px;
+    }
+    .fa-quote {
+        display: none;
+    }
+}
